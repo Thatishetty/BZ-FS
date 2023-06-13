@@ -8,6 +8,12 @@ app.get('/', function (req, res) {
 app.get('/Home', function (req, res) {
     res.send('Thatishetty Aakash chandra')
   })
+  
+app.get('/?number n', function (req, res) {
+    res.send('n*n')
+  })
+
+
 app.listen(3000,() =>{
     console.log('listening on port 3000');
 })
