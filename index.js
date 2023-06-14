@@ -5,13 +5,15 @@ app.get('/', function (req, res) {
   res.send('Hello World')
 })
 
-app.get('/Home', function (req, res) {
-    res.send('Thatishetty Aakash chandra')
+app.get('/home', function (req, res) {
+    console.log(req.query);
+    // let one = req.query.num;
+    // let two = req.query.numtwo;
+
+    res.send('Thatishetty Aakash Chandra')
   })
   
-app.get('/?number n', function (req, res) {
-    res.send('n*n')
-  })
+
 
 
 app.listen(3000,() =>{
